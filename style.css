@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-   font-weight: Arial, "Helventica Neue", Helvetica, sans-serif; 
+   font-family: Arial,  sans-serif; 
 }
 
 .wrapper{
@@ -97,7 +97,7 @@ body{
 }
 
 .what_text{
-
+ 
 }
 .what_text p{
    color: #333333;
@@ -105,30 +105,137 @@ body{
    line-height: 24px;
 }
 
-.columns{}
+.columns{
+    background-color: #f5f5f5;
+    padding: 50px 0 20px 0;
+}
 
 .columns_title{
     text-align: center;
     margin-bottom: 30px;
+    font-family: Arial, sans-serif;
 }
 .columns_row{
    display: flex; 
+   flex-wrap: wrap;
+   
+
 }
 .columns_column{
     flex: 0 1 50%;
+    margin-bottom: 30px;
+    
 }
 
-.columns_item{
-
+.column_item{
+    padding: 0 8px;
 }
 
 .item_row{
     display: flex;
+    
+}
+.item_body{
+    flex: 1 1 auto;
+    padding-left: 15px;
+}
+.item_title{
+    color: #445162;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 13px;
+    font-family: Arial, sans-serif;
 }
 
 .item_image{
     flex: 0 0 200px;
 }
+
+.item_text{
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Arial, sans-serif;
+    flex: 1 1 auto;
+}
+
+.vertical{
+  padding: 50px;
+}
+
+.vertical_title{
+    text-align:center;
+    margin-bottom: 30px ;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+
+}
+.vertical_body{
+  max-width: 990px;
+  margin: 0px auto;
+}
+.vertical_row{
+  display: flex;
+}
+.vertical_column{
+   flex: 0 1 33.333%; 
+   padding-right: 40px;
+   display: flex;
+}
+
+.vertical_column:last-child{
+     
+    padding-right:0 ;
+ }
+
+.vertical_item{
+ background-color: #445162;
+ color:#fff;
+ border-radius: 5px;
+ border: 1px solid #445162;
+ padding-bottom: 20px;
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.vertical_subTitle{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 12px 0;
+}
+
+.vertical_label{
+  text-align: center;
+  
+  background-color: white;
+  color:#445162;
+  font-size: 40px;
+  border: 1px solid #445162;
+  padding: 25 30;
+}
+
+.vertical_text{
+   font-size: 14px;
+  font-weight: 400;
+  padding: 20px;
+   line-height: 24px;
+   flex: 1 1 auto;
+}
+.vertical_btn{
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+   color:#445162;
+   font-size: 18px;
+   border: 1px solid #445162;
+   text-decoration: none;
+   margin: 0 20px;
+   display: block;
+   padding: 14px 0;
+}
+
 
 .footer{
     background-color: #f5f5f5;
